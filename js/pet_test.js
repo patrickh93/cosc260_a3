@@ -45,5 +45,8 @@ window.addEventListener("DOMContentLoaded", function () {
       idealPetString.innerHTML =
         "26-50 points: Larger dogs or more interactive pets like parrots or rabbits could be ideal.";
     }
+
+    //Call the animate function from the animate.js file, passing in the score variable
+    animate(score);
   });
 });
