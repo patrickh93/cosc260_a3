@@ -1,7 +1,9 @@
 //run code once whole page has loaded
 window.addEventListener("DOMContentLoaded", function () {
-  //form variable
+  //access form, test and results section and assign to variables
   const form = document.getElementById("test-form");
+  const testSection = document.getElementById("test-section");
+  const resultsSection = document.getElementById("results-section");
 
   //form submit event listener
   form.addEventListener("submit", function (e) {
@@ -22,6 +24,10 @@ window.addEventListener("DOMContentLoaded", function () {
       parseInt(question3) +
       parseInt(question4) +
       parseInt(question5);
+
+    //Once score is calculated, hide test section and show results section
+    testSection.style.display = "none";
+    resultsSection.style.display = "block";
 
     //access p element for test results
     const idealPetString = document.querySelector(".ideal-pet");
