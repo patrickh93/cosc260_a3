@@ -73,12 +73,8 @@ function validate(e) {
     }
   }
 
+  //If registration is successful, alert the user
   if (success) {
-    alert("Registration Successfull!");
+    alert("Registration Successful!");
   }
-
-  //   if (success) {
-  //     document.getElementById("registration-section").style.display = "none";
-  //     document.getElementById("success-section").style.display = "block";
-  //   }
 }

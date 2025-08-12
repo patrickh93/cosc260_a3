@@ -16,16 +16,19 @@ function animate(score) {
     rodentImg.slideDown(2000);
     $(".score").css({ color: "red" });
   } else if (score >= 11 && score <= 25) {
-    catImg.fadeIn(2000);
+    catImg
+      .css({ opacity: 0, position: "relative", left: "200px" })
+      .show()
+      .animate({ opacity: 1, left: "0px" }, 2000);
     $(".score").css({ color: "orange" });
   } else if (score >= 26 && score <= 50) {
-    dogImg.css({ opacity: 0 }).show().animate({ opacity: 1 }, 2000);
+    dogImg.fadeIn(2000);
     $(".score").css({ color: "green" });
   }
 
   //After 10 seconds, hide the results section and show the registration section
-  // setTimeout(() => {
-  //   $("#results-section").hide();
-  //   $("#registration-section").show();
-  // }, 10000);
+  setTimeout(() => {
+    $("#results-section").hide();
+    $("#registration-section").show();
+  }, 10000);
 }
