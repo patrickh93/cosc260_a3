@@ -24,8 +24,8 @@ function animate(score) {
   }
 
   //After 10 seconds, hide the results section and show the registration section
-  setTimeout(() => {
-    $("#results-section").hide();
-    $("#registration-section").show();
-  }, 10000);
+  // setTimeout(() => {
+  //   $("#results-section").hide();
+  //   $("#registration-section").show();
+  // }, 10000);
 }
