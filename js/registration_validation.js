@@ -34,7 +34,7 @@ function validate(e) {
     addError("Your name must be between 2 and 100 characters long");
     success = false;
   } else if (!/^[a-zA-Z\s'-]+$/.test(fullName)) {
-    addError("Your first name contains invalid characters.");
+    addError("Your first name contains invalid characters");
     success = false;
   }
 
@@ -48,7 +48,7 @@ function validate(e) {
     success = false;
   }
 
-  // validate email
+  //validate email
   const email = regoForm.elements["email"].value;
   if (email.length === 0) {
     addError("You must enter your email");
@@ -58,7 +58,7 @@ function validate(e) {
     success = false;
   }
 
-  // validate mobile
+  //validate mobile
   const mobile = regoForm.elements["mobile"].value;
   if (mobile.length > 0) {
     if (mobile.length !== 10) {
