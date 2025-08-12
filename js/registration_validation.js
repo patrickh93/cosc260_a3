@@ -34,7 +34,7 @@ function validate(e) {
     addError("Your name must be between 2 and 100 characters long");
     success = false;
   } else if (!/^[a-zA-Z\s'-]+$/.test(fullName)) {
-    addError("Your first name contains invalid characters");
+    addError("Your name contains invalid characters");
     success = false;
   }
 
